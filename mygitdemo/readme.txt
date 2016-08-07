@@ -1,2 +1,1 @@
-н╒пе
-oms
+Hello worldО╪│
