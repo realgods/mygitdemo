@@ -1,0 +1,170 @@
+#logolnk {
+    float: left;
+    display: block;
+    width: 188px;
+    background: url(../images/logo.svg) no-repeat 0;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+}
+
+/* 导航栏 定制颜色 开始 */
+.navbar-default {
+    background-color: #FFF;
+    border-color: #E7E7E7;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,.3);
+}
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+/* 导航栏 定制颜色 结束 */
+
+@media (min-width: 1200px) {
+    .navbar-default .container, .navbar-default .container-fluid {
+        max-width: 970px;
+    }
+}
+
+/* iPhone 6 and 6+ */
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) {
+    /* 导航栏 定制宽度 开始 */
+    .navbar-default .container, .navbar-default .container-fluid {
+        max-width: 600px;
+    }
+    /* 导航栏 定制宽度 结束 */
+
+    /* 导航栏 定制高度 开始 */
+    .navbar-brand, .navbar-nav li a, .navbar-text {
+        line-height: 50px;
+        height: 50px;
+        padding-top: 0;
+    }
+    body {
+        padding-top: 70px;
+    }
+    /* 导航栏 定制高度 结束 */
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    /* 导航栏 定制宽度 开始 */
+    .navbar-default .container, .navbar-default .container-fluid {
+        max-width: 700px;
+    }
+    /* 导航栏 定制宽度 结束 */
+
+    /* 导航栏 定制高度 开始 */
+    .navbar-brand, .navbar-nav li a {
+        line-height: 50px;
+        height: 50px;
+        padding-top: 0;
+    }
+    body {
+        padding-top: 70px;
+    }
+    /* 导航栏 定制高度 结束 */
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    /* 导航栏 定制宽度 开始 */
+    .navbar-default .container, .navbar-default .container-fluid {
+        max-width: 960px;
+    }
+    /* 导航栏 定制宽度 结束 */
+
+    /* 导航栏 定制高度 开始 */
+    .navbar-brand, .navbar-nav li a {
+        line-height: 70px;
+        height: 70px;
+        padding-top: 0;
+    }
+    body {
+        padding-top: 90px;
+    }
+    /* 导航栏 定制高度 结束 */
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    /* 导航栏 定制宽度 开始 */
+    .navbar-default .container .navbar-collapse, .navbar-default .container-fluid .navbar-collapse {
+        max-width: 1170px;
+        width: 1170px;
+        min-width: 1170px;
+    }
+    /* 导航栏 定制宽度 结束 */
+
+    /* 导航栏 定制高度 开始 */
+    .navbar-brand, .navbar-nav li a {
+        line-height: 90px;
+        height: 90px;
+        padding: 0;
+    }
+    body {
+        padding-top: 110px;
+    }
+    /* 导航栏 定制高度 结束 */
+}

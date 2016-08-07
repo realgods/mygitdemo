@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators/">
+    <excludes>
+        <!--attern>/templates/footer.ftl</pattern-->
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/static/*</pattern>
+    </excludes>
+   
+    <decorator name="other" page="viewPage.dec">
+        <!-- pattern>/index</pattern-->
+        <pattern>/cart/*</pattern>
+    </decorator>
+    <decorator name="main" page="mainPage.dec">
+        <pattern>/account/*</pattern>
+        <pattern>/catalog/*</pattern>
+    </decorator>
+</decorators>
